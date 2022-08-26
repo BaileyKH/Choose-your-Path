@@ -12,9 +12,9 @@ if answer == "right":
         if answer == "fight":
             answer = input("You manage to fight off the bear giving you the opportunity to escape! You've run into deep into the forest, would you like to set up camp or keep walking? *Please type camp or walk* ")
             if answer == "camp":
-                answer = input("Camping out was a smart play, you set up camp, re-fuel and set out again when the sun came up. You continued your journey until you reached the end of the forest line, you are greeted by a group of travelers and they ask if you'd like to stay awile or continue on your way *Please type stay or coninue*")
+                answer = input("Camping out was a smart play, you set up camp, re-fuel and set out again when the sun came up. You continued your journey until you reached the end of the forest line, you are greeted by a group of travelers and they ask if you'd like to stay awile or continue on your way *Please type stay or continue*")
                 if answer == "continue":
-                    print("You made it to your destination! You celebrate with a nice warm fire in your cambin and some delicious soup and wine. YOU WIN")
+                    print("You made it to your destination! You celebrate with a nice warm fire in your cabin and some delicious soup and wine. YOU WIN")
 
                 elif answer == "stay":
                     print("The travelers happen to be very poor and decide your golden necklace is worth more to them than your life, so they tie you to a near by tree and leave you for the beasts of the forest. YOU LOSE")
@@ -44,7 +44,45 @@ if answer == "right":
 
 elif answer == "left":
     answer = input("\n" + "You have come up to a large opening to the forest, would you like venture into it or attempt to go all the way aroud? *Please type enter forest or go around")
+    if answer == "forest":
+        print("You started walking into the forest and were immediatly approached by a lost villager who hasn't eaten in weeks, looks like you are dinner! YOU LOSE")
 
+    elif answer == "go around":
+        answer = input("You attempted to walk all the way around the forest, but on your way you ran into some travelers who offered to take you almost all the way to your destination, would you like to accept or decline their offer? *Please type accept or decline* ")
+        if answer == "accept":
+            answer = input("They welcome you with open arms and help you put all your things in the cart. You just about make it to your drop off when a group of thieving knomes raid the group. Some members are tring to fight back while others are attempting to flee, will you fight or run? *Please type fight or run* ")
+            if answer == "fight":
+                answer = input("You gather up all your strength and team up with the rest of the group defeating the raiders. They spared one of them leaving their fate up to you, will you let them leave or leave them to parish? *Please type live or die* ")
+                if answer == "live":
+                    answer = input("The rest of the group is grateful for your help and allowing them to take the last raider to be imprisoned and questioned, to show their appreciation they offer to take you the full way to your destination, will you go with them or walk? *Please type ride along or walk* ")
+                    if answer == "ride along":
+                        print("The group takes you right up to the gates and helps you with all of your things. You celebrate with a big pint infront of a nice cozy fire. YOU WIN")
+                    elif answer == "walk":
+                        print("You enjoy the rest of your stroll in piece, finally arriving and celebrate with a much needed rest. YOU WIN")
+                    else:
+                        print("It seems you are very clumsy and take a pretty hard tumble, you are sent back to the beginning")
+
+                elif answer == "die":
+                    print("disappointed. YOU LOSE")
+
+                else:
+                    print("It seems you are very clumsy and take a pretty hard tumble, you are sent back to the beginning")
+
+            elif answer == "run":
+                print("You attempted to run, but the raiders catch up and decide to make an example of you. YOU LOSE")
+
+            else:
+                print("It seems you are very clumsy and take a pretty hard tumble, you are sent back to the beginning")
+
+        elif answer == "decline":
+            print("You decide to decline their generous offer and continue on your path, eventually you run out of food and are stuck in the middle of no where. YOU LOSE")
+
+        else:
+            print("It seems you are very clumsy and take a pretty hard tumble, you are sent back to the beginning")
+
+    else:
+        print("It seems you are very clumsy and take a pretty hard tumble, you are sent back to the beginning")
+    
 
 else:
     print("It seems you are very clumsy and take a pretty hard tumble, you are sent back to the beginning")
