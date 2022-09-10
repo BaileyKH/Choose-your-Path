@@ -43,7 +43,7 @@ if answer == "right":
         print("\n" + "It seems you are very clumsy and take a pretty hard tumble, you are sent back to the beginning")
 
 elif answer == "left":
-    answer = input("\n" + "You have come up to a large opening to the forest, would you like venture into it or attempt to go all the way aroud? *Please type enter forest or go around")
+    answer = input("\n" + "You have come up to a large opening in the forest, would you like venture into it or attempt to go all the way aroud? *Please type enter forest or go around* ")
     if answer == "forest":
         print("\n" + "You started walking into the forest and were immediatly approached by a lost villager who hasn't eaten in weeks, looks like you are dinner! YOU LOSE")
 
@@ -58,7 +58,7 @@ elif answer == "left":
                     if answer == "ride along":
                         print("\n" "The group takes you right up to the gates and helps you with all of your things. You celebrate with a big pint infront of a nice cozy fire. YOU WIN")
                     elif answer == "walk":
-                        print("/n" + "You enjoy the rest of your stroll in piece, finally arriving and celebrate with a much needed rest. YOU WIN")
+                        print("\n" + "You enjoy the rest of your stroll in piece, finally arriving and celebrate with a much needed rest. YOU WIN")
                     else:
                         print("\n" + "It seems you are very clumsy and take a pretty hard tumble, you are sent back to the beginning")
 
